@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CBC Analyzer</string>
+    <string name="cbcAnalysis">CBC Analysis</string>
+
+    <string name="beetroot">Beetroot / चुकंदर</string>
+    <string name="spinach">Spinach / पालक</string>
+    <string name="citrusFruits">Citrus Fruits / खट्टे फल</string>
+    <string name="banana">Banana / केला</string>
+    <string name="dryFruits">Dry Fruits / सूखे मेवें</string>
+    <string name="SesameSeeds">Sesame Seeds / तिल</string>
+    <string name="tomato">Tomatoes / टमाटर </string>
+    <string name="bottlegourd">Bottle Gourd/लौकी का रस</string>
+</resources>

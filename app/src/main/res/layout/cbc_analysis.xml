@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/red"
+        android:text="Enter CBC report values in decimal form(Hemoglobin - 12.0)/CBC रिपोर्ट भरें, दशमलव लगाए "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="100dp">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/genderLable"
+                android:layout_marginTop="10dp"
+                android:padding="1dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Gender" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male/पुरुष" />
+
+                <RadioButton android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female/महिला" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:hint="Age/उम्र "
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/hbVal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:hint="Hemoglobin value"
+                android:inputType="numberDecimal"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/hctVal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:inputType="numberDecimal"
+                android:hint="HCT value"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/rbcVal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:inputType="numberDecimal"
+                android:hint="RBC value"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/mcvVal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:hint="MCV value"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/mchVal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:hint="MCH value"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/mchcVal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:hint="MCHC value"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/rdwCVVal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:hint="RDW CV value"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/tlcVal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:hint="TLC value"
+                android:padding="10dp" />
+<!--
+            <EditText
+                android:id="@+id/neutVal"
+                android:layout_width="340dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Neutrophils value"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/lympVal"
+                android:layout_width="340dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Lymphocytes value"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/monoVal"
+                android:layout_width="340dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Monocytes value"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/eosinVal"
+                android:layout_width="340dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Eosinophils value"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/basophiVal"
+                android:layout_width="340dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Basophil value"
+                android:padding="10dp" />-->
+
+            <EditText
+                android:id="@+id/pltVal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:hint="Platelet value"
+                android:inputType="numberDecimal"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/check_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FF0000"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Check/टेस्ट करें"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
